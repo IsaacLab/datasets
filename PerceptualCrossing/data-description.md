@@ -5,59 +5,59 @@ In each round of the experiment, a message containing precise information about 
 
 {"roundInfo":{
 
-["matchId"]: matchIdValue
+**"matchId"**: matchIdValue
 Numeric identifier for a pair of players in game 
 
-"player": playerValue
+**"player"**: playerValue
 Name of a player
 
-"playerId": playerIdValue
+**"playerId"**: playerIdValue
 32-digit hexadecimal label of a player
 
-"pairPlayer": pairPlayerValue
+**"pairPlayer"**: pairPlayerValue
 Name of the player's opponent
 
-"pairPlayerId": pairPlayerIdValue
+**"pairPlayerId"**: pairPlayerIdValue
 32-digit hexadecimal label of the player's opponent
 
-"round": roundValue,
+**"round"**: roundValue,
 Current round
 
-"collisions": collisionsValue
+**"collisions"**: collisionsValue
 Number of collisions suffered by a player as a result of his crossings with other players
 
-"timeDelay": timeDelayValue,
+**"timeDelay"**: timeDelayValue,
 Delay (miliseconds) between the opponent bot and the player (taken the last as the reference). This field is used when the type of bot is SHADOW.
 
-"pixelDelay": pixelDelayValue,
+**"pixelDelay"**: pixelDelayValue,
 Delay (miliseconds) between the opponent bot and the player (taken the last as the reference). This field is used when the type of bot is SHADOW.
 
-"oscillatoryList": [oscillatoryListValue],
+**"oscillatoryList"**: [oscillatoryListValue],
 List of 2-element objects: instant of time and position of the receptor. It contains the trace made by the opponent OSCILLATORY bot during that round.
 
-"pairFile": pairFileValue,
+**"pairFile"**: pairFileValue,
 When the opponent player is a human, this label contains the URL of the file with information of the round.
 
-"maxTime": maxTimeValue,
+**"maxTime"**: maxTimeValue,
 Number of seconds per round.
 
-"squareSide": squareSideValue,
+**"squareSide"**: squareSideValue,
 Side length (pixels) of a square-receptor.
 
-"lineSize": lineSizeValue,
+**"lineSize"**: lineSizeValue,
 Number of pixels of the line.
 
-"list": [listValue],
+**"list"**: [listValue],
 List of 3-element objects: time instant, position of the receptor and collision index (boolean). It is the trace made by the player during that round.
 
-"reply": reply,
+**"reply"**: reply,
 Player's response at the end of the round, which can be:
  - 'human': the opponent is a human
  - 'almost-human': the probability that the opponent were a human is high 
  - 'almost-bot': the probability that the opponent were a bot is high 
  - 'bot': the opponent is a bot
 
-"success": success
+**"success"**: success
 It indicates the result of the response:
  - 'true': right answer
  - 'false': wrong answer
