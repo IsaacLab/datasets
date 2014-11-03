@@ -5,7 +5,7 @@ In each round of the experiment, a message containing precise information about 
 
 {"roundInfo":{
 
-"matchId": matchIdValue
+["matchId"]: matchIdValue
 Numeric identifier for a pair of players in game 
 
 "player": playerValue
