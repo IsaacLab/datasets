@@ -1,4 +1,6 @@
 JSON data description
+========
+
 In each round of the experiment, a message containing precise information about the players is sent from participants to the server. Messages are stored in a text file (one per client) which is built with lines of JSON objects. These “fields” with information stored are shown below.
 
 {"roundInfo":{
