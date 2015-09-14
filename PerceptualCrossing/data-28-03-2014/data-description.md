@@ -70,3 +70,21 @@ It indicates the result of the response:
  - 'false': wrong answer
 
 }}
+
+Before analyzing the data, a couple of steps are necessary in order to reconstruct the time series of positions and velocities used in the paper.
+
+First, since the players are in a circular ring (when you reach the extreme of the environment you appear at the other side), we had to unwrap the series of positions of the players. In Matlab we thid this with the unwrap function with a value of 300 (since the world is 600 units long)
+
+Second, our implementation of the PCE recorded the position of the players only when the mouse moved. Thus, there are many empty positions which we had to fill before computing the derivative for extracting the velocity. We did this simply by using this function.
+
+```matlab
+function [t,x]=fillgaps(t1,x1,dt)
+    t=min(t1):dt:max(t1);
+    N=length(t);
+    x=zeros(1,N);
+    for i=1:N
+        it1=find(abs(t1-t(i))==min(abs(t1-t(i))),1);
+        x(i)=x1(it1);
+    end
+end
+```
