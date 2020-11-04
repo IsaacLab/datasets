@@ -1,4 +1,4 @@
-Perceptual crossing dataset
+ISAAC open data
 ========
 
-Data from perceptual crossing experiments in this article https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01281/full
+Repository containing open data generated at ISAAC lab
